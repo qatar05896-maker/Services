@@ -1,15 +1,15 @@
-app = "servicenew"
+app = "services-lau3jg"
 primary_region = "ams"
 
 [http_service]
-auto_start_machines = true
-auto_stop_machines = false
-force_https = true
-internal_port = 8_080
-min_machines_running = 1
-processes = [ "app" ]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ["app"]
 
 [[vm]]
-cpu_kind = "performance"
-cpus = 8
-memory = 61440
+  cpu_kind = "performance"
+  cpus = 8
+  memory_mb = 61440
