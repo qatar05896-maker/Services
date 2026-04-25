@@ -1,0 +1,15 @@
+app = "servicenew"
+primary_region = "ams"
+
+[http_service]
+auto_start_machines = true
+auto_stop_machines = false
+force_https = true
+internal_port = 8_080
+min_machines_running = 1
+processes = [ "app" ]
+
+[[vm]]
+cpu_kind = "performance"
+cpus = 8
+memory = 61440
